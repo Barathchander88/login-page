@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AquaEssence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 30px;
+            font-size: 36px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+
+        .login-container input::placeholder {
+            color: #ddd;
+        }
+
+        .login-container input:focus {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff5e00;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #e04a00;
+        }
+
+        .login-container a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .login-container a:hover {
+            color: #00c6ff;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+            }
+
+            .login-container h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+        <a href="#">Create an account</a>
+    </div>
+
+</body>
+</html>

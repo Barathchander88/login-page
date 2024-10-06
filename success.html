@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaEssence - Pure Water in Premium Bottles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Parallax Banner */
+        .parallax {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .parallax h1 {
+            font-size: 60px;
+            text-transform: uppercase;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .parallax .cta {
+            background: #ff5e00;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .parallax .cta:hover {
+            transform: scale(1.2);
+            background-color: #cc4a00;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 50px;
+            color: #003366;
+        }
+
+        /* Purity Section */
+        .purity-section {
+            background: linear-gradient(135deg, #f4f9ff, #e1f1ff);
+        }
+
+        .purity-features {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .purity-feature {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            width: 28%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .purity-feature:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .purity-feature h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0072ff;
+        }
+
+        /* Sustainability Section */
+        .sustainability-section {
+            background-color: #003366;
+            color: white;
+        }
+
+        .sustainability-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .sustainability-feature {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            width: 28%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sustainability-feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Premium Hydration Section */
+        .premium-section {
+            background: #f5f5f5;
+        }
+
+        .premium-experience {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .premium-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .premium-box:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .premium-box h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #0072ff;
+        }
+
+        .premium-box p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .premium-box .price {
+            font-size: 26px;
+            margin-top: 10px;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .purity-features, .sustainability-features, .premium-experience {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .purity-feature, .sustainability-feature, .premium-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        AquaEssence - Pure Water in Premium Bottles
+    </header>
+
+    <!-- Parallax Banner Section -->
+    <div class="parallax">
+        <h1>Pure. Refreshing. Premium.</h1>
+        <a href="#purity" class="cta">Explore Now</a>
+    </div>
+
+    <!-- Purity Section -->
+    <section class="purity-section" id="purity">
+        <h2>Uncompromising Purity</h2>
+        <div class="purity-features">
+            <div class="purity-feature">
+                <h3>Crystal Clear Filtration</h3>
+                <p>Advanced filtration for water that’s pure and clean.</p>
+            </div>
+            <div class="purity-feature">
+                <h3>No Additives, Just Water</h3>
+                <p>100% pure water with no chemicals or additives.</p>
+            </div>
+            <div class="purity-feature">
+                <h3>High-Quality Assurance</h3>
+                <p>Every bottle is tested to the highest standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability-section">
+        <h2>Sustainability First</h2>
+        <div class="sustainability-features">
+            <div class="sustainability-feature">
+                <h3>Eco-Friendly Materials</h3>
+                <p>Our bottles are made with 100% recyclable materials.</p>
+            </div>
+            <div class="sustainability-feature">
+                <h3>Low Carbon Footprint</h3>
+                <p>Produced with minimal environmental impact.</p>
+            </div>
+            <div class="sustainability-feature">
+                <h3>Renewable Energy Powered</h3>
+                <p>All production powered by clean, renewable energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Hydration Experience Section -->
+    <section class="premium-section">
+        <h2>Premium Hydration Experience</h2>
+        <div class="premium-experience">
+            <div class="premium-box">
+                <h3>Elegant Bottle Design</h3>
+                <p>Stylish and sophisticated water bottles.</p>
+                <div class="price">$2.50 per liter</div>
+            </div>
+            <div class="premium-box">
+                <h3>Gift-Ready Packaging</h3>
+                <p>The perfect gift for any occasion.</p>
+                <div class="price">$3.00 per liter</div>
+            </div>
+            <div class="premium-box">
+                <h3>Pure Refreshment</h3>
+                <p>Hydrate with water as it’s meant to be.</p>
+                <div class="price">$2.75 per liter</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 AquaEssence. Pure Water, Pure Life.
+    </footer>
+
+</body>
+</html>
